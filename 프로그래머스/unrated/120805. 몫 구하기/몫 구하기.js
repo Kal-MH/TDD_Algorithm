@@ -1,3 +1,5 @@
-function solution(num1, num2) {
-    return parseInt(num1 / num2);
+export function solution(num1, num2) {
+  if (isNaN(num1) || isNaN(num2)) return NaN;
+
+  return Number(num1 / num2);
 }
